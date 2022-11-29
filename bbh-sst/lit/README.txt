@@ -1,0 +1,1 @@
+Citation: DRINKWATER, K.F. and B. PETRIE. 2011. A Note on the Long-Term Sea Surface Temperature Records at Boothbay Harbor, Maine. J. Northwest Atl. Fish. Sci., 43; 93–101. https://doi.org/10.2960/J.v43.m663
