@@ -1,0 +1,79 @@
+---
+title: "BBH-SST"
+output: github_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Getting ready
+
+### Got packages?
+
+If you don't have the required R packages you'll need to install each.  You need only need to do this once, but if you upgrade R you may need or want to update these, too.
+
+```{r}
+required_packages <- c("dplyr", "readr", "ggplot2", "jsonlite", "fs", "here")
+current_packages <- rownames(installed.packages())
+for (package in required_packages){
+  if (!(package %in% current_packages)) install.packages(package)
+}
+```
+
+### Load packages and functions
+
+For the purposes of just this `README` we'll load the [fs](https://CRAN.R-project.org/package=fs) package.
+
+Otherwise, all we need to do is source the `setup.R` file.
+
+```{r}
+library(fs)        # this is just for use in this README
+source("setup.R")  # this is the good stuff
+```
+
+This small project organizes data, images, literature and code into subdirectories. It's pretty self-explanatory, but do take a look at `setup.R` to see what is going on.
+
+```{r}
+fs::dir_tree()
+```
+
+If you study `setup.R` you can see that we created three directory paths in the global environment.  You access these just like you had defined them manually.
+
+```{r}
+list.files(CODEPATH)
+```
+
+### Read the data
+
+We created input-output functions, that `setup.R` sourced so they are now in your global environment.
+
+```{r}
+x <- read_bbh()
+dplyr::glimpse(x)
+```
+
+### Plot the data
+
+`setup.R` also sourced a function for plotting the data.
+
+```{r}
+plot_bbh(x)
+```
+
+We can modify the range of time - in essence zooming into recent times. Let's filter out just the records from Jan 1 2016 through today.
+
+```{r}
+x |>
+  dplyr::filter(dplyr::between(date, as.Date("2016-01-01"), Sys.Date())) |>
+  plot_bbh()
+```
+
+Because `plot_bbh()` returns a plot object we can add another layer - perhaps a smoothing line would be nice?
+
+```{r, message = FALSE, warning = FALSE}
+x |>
+  dplyr::filter(dplyr::between(date, as.Date("2016-01-01"), Sys.Date())) |>
+  plot_bbh() +
+  ggplot2::geom_smooth(level = 0.99)
+```
