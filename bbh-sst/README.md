@@ -1,6 +1,10 @@
 BBH-SST
 ================
 
+This projects demonstrates one simple organizational path using Maine
+Department of Marine Resources’ [Boothbay Harbor SST Time
+Series](https://www.maine.gov/dmr/science/weather-tides/boothbay-harbor-environmental-data).
+
 ## Getting ready
 
 ### Got packages?
@@ -43,6 +47,11 @@ fs::dir_tree()
     ## │   └── plot.R
     ## ├── README.Rmd
     ## ├── README.md
+    ## ├── README_files
+    ## │   └── figure-gfm
+    ## │       ├── unnamed-chunk-6-1.png
+    ## │       ├── unnamed-chunk-7-1.png
+    ## │       └── unnamed-chunk-8-1.png
     ## ├── data
     ## │   ├── README.txt
     ## │   └── sst.csv

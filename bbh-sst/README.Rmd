@@ -7,6 +7,8 @@ output: github_document
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
+This projects demonstrates one simple organizational path using Maine Department of Marine Resources' [Boothbay Harbor SST Time Series](https://www.maine.gov/dmr/science/weather-tides/boothbay-harbor-environmental-data).
+
 ## Getting ready
 
 ### Got packages?
