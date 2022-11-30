@@ -8,6 +8,14 @@ Small project templates in R (but really could be any language)
 
 ## The Projects
 
-### bbh-sst
+### **The Setup** style project
 
-A small project that shows one way to organize code and data from [Boothbay Harbor SST Time Series](https://www.maine.gov/dmr/science/weather-tides/boothbay-harbor-environmental-data). Includes functions to download data, read CSV files and make simple plots.
+A small project that shows one way to organize code and data from [Boothbay Harbor SST Time Series](https://www.maine.gov/dmr/science/weather-tides/boothbay-harbor-environmental-data). The project software is kicked off by a single `setup.R` file and includes functions to download data, read CSV files and make simple plots.
+
+### **The Package** style project
+
+Coming...
+
+### **The Big Data** style project
+
+Coming...
