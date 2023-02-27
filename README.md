@@ -5,6 +5,13 @@ Project templates in R and python (but really could be any language).  This repo
 
 [Fork](https://docs.github.com/en/get-started/quickstart/fork-a-repo) this repository, then [clone](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) your own fork to your local machine. 
 
+You can also copy the appropriate directory (described below) that fits your project, rather than taking the whole repository.
+
+## Reproducible Research
+
+This talk from OceanHackWeek has some good things to think about before setting up a project, such as best practices for reproducibility and how you might organize your project directories.
+
+https://www.youtube.com/watch?v=YB3-zuoIzCc
 
 ## The Projects
 
