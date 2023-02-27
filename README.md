@@ -5,7 +5,7 @@ Project templates in R and python (but really could be any language).  This repo
 
 [Fork](https://docs.github.com/en/get-started/quickstart/fork-a-repo) this repository, then [clone](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) your own fork to your local machine. 
 
-You can also copy the appropriate directory (described below) that fits your project, rather than taking the whole repository.
+You can also copy the appropriate directory (described below) that fits your project, rather than taking the whole repository. For example, in "R/setup" there is an example directory structure for a "setup" style project.
 
 ## Reproducible Research
 
